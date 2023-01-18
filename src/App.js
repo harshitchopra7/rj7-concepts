@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "./Navbar";
+import Test from "./Test";
+import Hooks from "./concepts/Hooks";
+import Calculator from "./practice/Calculator";
+import ApiCalling from "./concepts/apiCalling";
 
 function App() {
+  // this area is used to write js
+  console.log("Hellooooooo");
+
   return (
+    // this area is used to write HTML
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Hooks /> */}
+      {/* <Calculator /> */}
+      <ApiCalling />
     </div>
   );
 }
