@@ -5,6 +5,8 @@ import Hooks from "./concepts/Hooks";
 import Calculator from "./practice/Calculator";
 import ApiCalling from "./concepts/apiCalling";
 import LifeCycleMethods from "./concepts/LifeCycleMethods";
+import Events from "./concepts/Events";
+import ConditionalOperators from "./concepts/ConditionalOperators";
 
 function App() {
   // this area is used to write js
@@ -15,7 +17,9 @@ function App() {
       {/* <Hooks /> */}
       {/* <Calculator /> */}
       {/* <ApiCalling /> */}
-      <LifeCycleMethods />
+      {/* <LifeCycleMethods /> */}
+      {/* <Events /> */}
+      <ConditionalOperators />
     </div>
   );
 }

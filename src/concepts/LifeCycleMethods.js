@@ -19,7 +19,7 @@ function LifeCycleMethods() {
 
   useEffect(() => {
     console.log("I am useEffect");
-  });
+  }, []);
 
   function changeNumber1() {
     setNumber1(number1 + 10);
@@ -29,7 +29,8 @@ function LifeCycleMethods() {
     setNumber2(number2 + 100);
   }
 
-  function changeNumber3() {
+  function changeNumber3(e) {
+    console.log(e);
     setNumber3(number3 + 100);
   }
 
