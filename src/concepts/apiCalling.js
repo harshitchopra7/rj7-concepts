@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // Javascript is single threaded synchronous language
 
 function ApiCalling() {
   const [apiData, setApiData] = useState([]);
+
+  const [numbers, setNumbers] = useState(0);
+  const [addedNumbers, setAddedNumbers] = useState(10);
 
   // end point - https://fakestoreapi.com/products
 
@@ -20,6 +23,7 @@ function ApiCalling() {
   return (
     <div>
       <p>Heyyyyy</p>
+
       <button onClick={callApi()}>Get Data</button>
 
       {apiData.map((value) => (
