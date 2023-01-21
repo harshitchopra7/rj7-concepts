@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       {/* <Hooks /> */}
       {/* <Calculator /> */}
-      {/* <ApiCalling /> */}
+      <ApiCalling />
       {/* <LifeCycleMethods /> */}
       {/* <Events /> */}
-      <ConditionalOperators />
+      {/* <ConditionalOperators /> */}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./ApiCalling.css";
 
 // Javascript is single threaded synchronous language
 
@@ -20,14 +21,20 @@ function ApiCalling() {
     setApiData(data);
   }
 
+  useEffect(() => {
+    callApi();
+  }, []);
+
   return (
-    <div>
-      <p>Heyyyyy</p>
-
-      <button onClick={callApi()}>Get Data</button>
-
+    <div className="products">
       {apiData.map((value) => (
-        <p>{value.id}</p>
+        <div className="product_container">
+          <img src={value.image} />
+          <p className="title">{value.title}</p>
+          <p className="price">Rs {value.price}</p>
+          <p className="category">{value.category}</p>
+          <p className="rating">{value.rating.rate}</p>
+        </div>
       ))}
     </div>
   );
