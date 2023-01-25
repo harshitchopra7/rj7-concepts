@@ -7,6 +7,7 @@ import ApiCalling from "./concepts/apiCalling";
 import LifeCycleMethods from "./concepts/LifeCycleMethods";
 import Events from "./concepts/Events";
 import ConditionalOperators from "./concepts/ConditionalOperators";
+import UseEffect from "./concepts/UseEffect";
 
 function App() {
   // this area is used to write js
@@ -16,10 +17,11 @@ function App() {
     <div className="App">
       {/* <Hooks /> */}
       {/* <Calculator /> */}
-      <ApiCalling />
+      {/* <ApiCalling /> */}
       {/* <LifeCycleMethods /> */}
       {/* <Events /> */}
       {/* <ConditionalOperators /> */}
+      <UseEffect />
     </div>
   );
 }
