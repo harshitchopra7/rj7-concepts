@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../contexts/user";
 
 function ConditionalOperators() {
+  const { userName, setUserName } = useContext(UserContext);
+
   const [age, setAge] = useState(17);
 
   const [isLoggedIn, setLoggedIn] = useState(false);
@@ -13,6 +16,7 @@ function ConditionalOperators() {
 
   return (
     <div>
+      <p>User Name: {userName}</p>
       {/* Ternary Operators  */}
       {/* {age >= 18 ? (
         <p>You are eligible to vote</p>

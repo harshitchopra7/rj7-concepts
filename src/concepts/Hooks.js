@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { UserContext } from "../contexts/user";
 import "./Hooks.css";
 
 function Hooks() {
-  // useState
+  const { userName } = useContext(UserContext);
 
+  // useState
   const [number, setNumber] = useState(0);
   // value -> Variable
   // setValue -> function
@@ -34,6 +36,7 @@ function Hooks() {
 
   return (
     <div>
+      <p>I am Hooks component {userName}</p>
       <p>Click on press me button to add value 1 to the number</p>
       <p className="number">{number}</p>
       <button onClick={addOne}>Add 1</button>
