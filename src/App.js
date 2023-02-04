@@ -12,6 +12,8 @@ import UseEffect from "./concepts/UseEffect";
 import { UserProvider } from "./contexts/user";
 import Login from "./practice/Login";
 import LoggedIn from "./practice/LoggedIn";
+import LocalStorage from "./concepts/LocalStorage";
+import LocalStoragePractice from "./practice/LocalStoragePractice";
 
 function App() {
   // this area is used to write js
@@ -20,14 +22,16 @@ function App() {
   return (
     // this area is used to write HTML
     <div className="App">
-      <Hooks />
+      {/* <Hooks /> */}
       {/* <Calculator /> */}
       {/* <ApiCalling /> */}
       {/* <LifeCycleMethods /> */}
       {/* <Events /> */}
       {/* <ConditionalOperators /> */}
       {/* <UseEffect /> */}
-      {isLoggedIn ? <LoggedIn /> : <Login setIsLoggedIn={setIsLoggedIn} />}
+      {/* {isLoggedIn ? <LoggedIn /> : <Login setIsLoggedIn={setIsLoggedIn} />} */}
+      {/* <LocalStorage /> */}
+      <LocalStoragePractice />
     </div>
   );
 }
